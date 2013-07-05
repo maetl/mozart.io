@@ -6,7 +6,7 @@
 
 <h3>Declarative Binding</h3>
 <p>Bindings in Mozart are declared on objects as properties with a specific name suffix, like so:</p>
-<pre>class App.MyObject extends Mozart.MztObject
+<pre data-language="coffeescript">class App.MyObject extends Mozart.MztObject
   theCount: 'one sparkly vampire! ha ha ha!'
 
 App.myObject = App.MyObject.create()
@@ -27,7 +27,7 @@ console.log App.mySecondObject.slave
 
 <h3>Lookups</h3>
 <p>Sometimes, you need the value of a property on a path without needing the values to update automatically. <strong>Lookup</strong> properties provide this functionality, getting the value only once, at instatiation.</p>
-<pre>class App.MyObject extends Mozart.MztObject
+<pre data-language="coffeescript"">class App.MyObject extends Mozart.MztObject
   dodgyFanFiction: 'Fifty Shades of Mozart'
 
 App.myObject = App.MyObject.create()

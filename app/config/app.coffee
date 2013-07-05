@@ -315,6 +315,7 @@ App.Application.ready = ->
 
   App.Application.layout.bindRoot()
   App.Application.layout.start()
+  App.Application.layout.bind('render:complete', -> Rainbow.color())
 
   $(document).trigger('Mozart:loaded')
 
