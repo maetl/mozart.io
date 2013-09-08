@@ -1,0 +1,53 @@
+<h1>Introduction</h1>
+
+<p>Mozart is a client-side framework for creating rich URL-driven applications using key-value bindings and a clean and powerful separation of concerns.</p>
+
+<p>Mozart is based on a small set of core concepts that determine the shape of most of the framework. Understanding these concepts will make .</p>
+
+<h3>URL Driven Applications</h3>
+
+<p>Mozart is optimized for URL-driven applications. All Mozart applications begin as a state-machine of routes, using semantic URLs (or hash fragments) to represent the different states of your user interface.</p>
+
+<p>This is a constraint we think is worth having. By making application state directly addressable, you’re honouring the basic contract of the world-wide-web. As well as a consistently navigable sitemap, you get all the benefits of bookmarking and sharing along with deep linking to state within your app.</p>
+
+<h3>Is Mozart an MVC Framework?</h3>
+
+<p>The classical Model-View-Controller design pattern is about managing state so that everything is kept in sync when changes occur. MVC is great for explaining the general philosophy of decoupling application logic from the user interface, but we’ve found it comes with a lot of baggage when teaching people how to actually get things done.</p>
+
+<p>The essence of Mozart’s interpretation of MVC is the concept of declarative key-value bindings. Bindings are the primary technique we use to decouple presentation logic from data and application state changes.</p>
+
+<h3>Key Value Bindings</h3>
+
+Key-value bindings enable properties of objects to be updated directly when the properties of other objects change.
+
+All Mozart objects support three different ways to bind properties together:
+
+Sync binding: a two way binding where a change on either property will update the other.
+Notify binding: a one way binding where the bound property will follow changes to the declared property
+Observe binding, a one way binding where the declared property will follow changes from the bound property
+
+Any object that inherits from the Mozart base object can use these bindings.
+
+By default, the sync binding is used to connect properties together. (Why?)
+
+<h3>Separation of Concerns</h3>
+
+<p>While the base Mozart components can be used in any way imaginable, the real value of the framework comes from the convention of keeping presentation logic and event handling in re-usable Views.</p>
+
+<h3>Views</h3>
+
+<p>Views map a flow of application events from things happening in the browser/DOM to things that represent the meaningful state of your application.</p>
+
+<p>For example, a click in your app event could mean any number of things depending on where it happens in the DOM. . Views wrap an element in the DOM, and can handle all events on that element and its children (except those child elements that are in-turn wrapped by child views).
+	
+The view is responsible for turning that click event into something meaningful to the application — it could mean you’re deleting something, linking to a new URL, or toggling a menu.</p>
+
+Views are also responsible for managing the template which applies markup to the element wrapped by the view.
+
+<p>Views should respond to change, not cause it.</p>
+
+<h3>Templates</h3>
+
+<h3>Models</h3>
+
+We are used to thinking about entities being embedded in a web of relationships to other entities. The belongsTo, hasMany, and hasManyThrough associations mirror the
