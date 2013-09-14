@@ -108,7 +108,7 @@ module.exports = function (grunt) {
 
         // Integration server for serving up static demo app
         integration: {
-            port: 8080,
+            port: 5050,
             base: './public'
         },
 

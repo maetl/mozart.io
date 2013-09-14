@@ -19,8 +19,8 @@ App.Application.set 'layout', Mozart.Layout.create(
       viewClass: App.MozartPageView
       viewOptions:
         contentClass: App.GettingStartedView
-      path: "/getting_started"
-      title: "Getting Started"
+      path: "/start"
+      title: "Start"
 
     Mozart.Route.create
       viewClass: App.MozartPageView
@@ -177,126 +177,126 @@ App.Application.set 'layout', Mozart.Layout.create(
       viewClass: App.MozartApiDocView
       viewOptions:
         contentClass: App.ApiDocsView
-      path: "/apidocs"
-      title: "API Docs"
+      path: "/reference/api"
+      title: "API Reference"
 
     Mozart.Route.create
       viewClass: App.MozartApiDocView
       viewOptions:
         contentClass: App.ApiDocsMztObjectView
-      path: "/apidocs/mzt_object"
+      path: "/reference/api/mzt_object"
       title: "API Docs - Mzt Object"   
 
     Mozart.Route.create
       viewClass: App.MozartApiDocView
       viewOptions:
         contentClass: App.ApiDocsViewView
-      path: "/apidocs/view"
+      path: "/reference/api/view"
       title: "API Docs - View"  
 
     Mozart.Route.create
       viewClass: App.MozartApiDocView
       viewOptions:
         contentClass: App.ApiDocsLayoutView
-      path: "/apidocs/layout"
+      path: "/reference/api/layout"
       title: "API Docs - Layout"
 
     Mozart.Route.create
       viewClass: App.MozartApiDocView
       viewOptions:
         contentClass: App.ApiDocsDomManagerView
-      path: "/apidocs/dom_manager"
+      path: "/reference/api/dom_manager"
       title: "API Docs - DOM Manager"
 
     Mozart.Route.create
       viewClass: App.MozartApiDocView
       viewOptions:
         contentClass: App.ApiDocsControllerView
-      path: "/apidocs/controller"
+      path: "/reference/api/controller"
       title: "API Docs - Controller"
 
     Mozart.Route.create
       viewClass: App.MozartApiDocView
       viewOptions:
         contentClass: App.ApiDocsModelView
-      path: "/apidocs/model"
+      path: "/reference/api/model"
       title: "API Docs - Model"  
 
     Mozart.Route.create
       viewClass: App.MozartApiDocView
       viewOptions:
         contentClass: App.ApiDocsUtilView
-      path: "/apidocs/util"
+      path: "/reference/api/util"
       title: "API Docs - Util"  
 
     Mozart.Route.create
       viewClass: App.MozartApiDocView
       viewOptions:
         contentClass: App.ApiDocsCookiesView
-      path: "/apidocs/cookies"
+      path: "/reference/api/cookies"
       title: "API Docs - Cookies"    
 
      Mozart.Route.create
       viewClass: App.MozartApiDocView
       viewOptions:
         contentClass: App.ApiDocsModelInstanceView
-      path: "/apidocs/instance"
+      path: "/reference/api/instance"
       title: "API Docs - Instance"
 
      Mozart.Route.create
       viewClass: App.MozartApiDocView
       viewOptions:
         contentClass: App.ApiDocsRouterView
-      path: "/apidocs/router"
+      path: "/reference/api/router"
       title: "API Docs - Router"
 
     Mozart.Route.create
       viewClass: App.MozartApiDocView
       viewOptions:
         contentClass: App.ApiDocsInstanceCollectionView
-      path: "/apidocs/instance_collection"
+      path: "/reference/api/instance_collection"
       title: "API Docs - InstanceCollection"
 
     Mozart.Route.create
       viewClass: App.MozartApiDocView
       viewOptions:
         contentClass: App.ApiDocsAjaxView
-      path: "/apidocs/ajax"
+      path: "/reference/api/ajax"
       title: "API Docs - Ajax"
 
     Mozart.Route.create
       viewClass: App.MozartApiDocView
       viewOptions:
         contentClass: App.ApiDocsLocalStorageView
-      path: "/apidocs/local_storage"
+      path: "/reference/api/local_storage"
       title: "API Docs - LocalStorage"
 
     Mozart.Route.create
       viewClass: App.MozartApiDocView
       viewOptions:
         contentClass: App.ApiDocsDataIndexView
-      path: "/apidocs/data_index"
+      path: "/reference/api/data_index"
       title: "API Docs - DataIndex"
 
     Mozart.Route.create
       viewClass: App.MozartApiDocView
       viewOptions:
         contentClass: App.ApiDocsHandlebarsView
-      path: "/apidocs/handlebars"
+      path: "/reference/api/handlebars"
       title: "API Docs - Handlebars Helpers"
 
     Mozart.Route.create
       viewClass: App.MozartApiDocView
       viewOptions:
         contentClass: App.ApiDocsEventsView
-      path: "/apidocs/events"
+      path: "/reference/api/events"
       title: "API Docs - Events"
 
     Mozart.Route.create
       viewClass: App.MozartApiDocView
       viewOptions:
         contentClass: App.ApiDocsRelationClassesView
-      path: "/apidocs/relation_classes"
+      path: "/reference/api/relation_classes"
       title: "API Docs - Relation Classes"
   ]
 
